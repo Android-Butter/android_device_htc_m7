@@ -27,6 +27,9 @@
 # inherit from common m7-common
 -include device/htc/m7-common/BoardConfigCommon.mk
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := m7,m7tmo
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := m7
 
@@ -65,4 +68,4 @@ BOARD_PROVIDES_LIBRIL := true
 # mmcblk0p29: 06069e00 00000200 "reserve"
 
 # inherit from the proprietary version
--include vendor/htc/m7/BoardConfigVendor.mk
+-include vendor/htc/m7tmo/BoardConfigVendor.mk
